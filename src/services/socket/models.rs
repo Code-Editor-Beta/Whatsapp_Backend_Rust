@@ -2,7 +2,8 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct ChatMessage {
-    from: String,
-    to: String,
-    content: String,
+    pub from: String,
+    pub to: String,
+    pub msg: String,
+    pub is_group: bool,
 }
